@@ -1,38 +1,19 @@
-# 1. เข้าไปที่โฟลเดอร์โปรเจกต์
+# 1. Change Directory to your folder project
 cd ~/my-coffee-app
 
-# 2. ตั้งค่าตัวแปรที่จำเป็น
+# 2. Setting in neccery 
 export PROJECT_ID=$(gcloud config get-value project)
 export REGION=asia-southeast1
-export GOOGLE_API_KEY="ใส่_API_key_ของคุณตรงนี้"
+export GOOGLE_API_KEY="your_API_key_" (Google Ai Studio) API = Free tier
 
-# 3. รันแอป
+# 3. Run App
 streamlit run app.py \
   --server.port=8080 \
   --server.address=0.0.0.0 \
   --browser.serverAddress=localhost \
   --server.enableCORS=false \
   --server.enableXsrfProtection=false
-
-# 1. เข้าไปที่โฟลเดอร์โปรเจกต์
-cd ~/my-coffee-app
-
-# 2. ตั้งค่าตัวแปรที่จำเป็น
-export PROJECT_ID=$(gcloud config get-value project)
-export REGION=asia-southeast1
-export GOOGLE_API_KEY="ใส่_API_key_ของคุณตรงนี้"
-
-# 3. รันแอป
-streamlit run app.py \
-  --server.port=8080 \
-  --server.address=0.0.0.0 \
-  --browser.serverAddress=localhost \
-  --server.enableCORS=false \
-  --server.enableXsrfProtection=false
-
-  เรื่องที่ 2: กด "Add a README"
-
-กดปุ่มสีเขียว "Add a README" ได้เลยครับ ระบบจะพาไปหน้าสร้างไฟล์ ให้วางเนื้อหานี้ลงไป:
+  
 # ☕ Coffee Shop AI Barista
 
 An AI-powered coffee shop chatbot built with Streamlit and Google ADK (Agent Development Kit), powered by Gemini.
