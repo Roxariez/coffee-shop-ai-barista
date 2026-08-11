@@ -1,4 +1,6 @@
 # 1. Change Directory to your folder project
+
+```bash
 cd ~/my-coffee-app
 
 # 2. Setting in neccery 
