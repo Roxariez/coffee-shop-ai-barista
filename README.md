@@ -3,19 +3,25 @@
 ```bash
 cd ~/my-coffee-app
 
-# 2. Setting in neccery 
+```
+# 2. Setting in neccery
+
+```bash
 export PROJECT_ID=$(gcloud config get-value project)
 export REGION=asia-southeast1
 export GOOGLE_API_KEY="your_API_key_" (Google Ai Studio) API = Free tier
 
+```
+
 # 3. Run App
+```bash
 streamlit run app.py \
   --server.port=8080 \
   --server.address=0.0.0.0 \
   --browser.serverAddress=localhost \
   --server.enableCORS=false \
   --server.enableXsrfProtection=false
-  
+```
 # ☕ Coffee Shop AI Barista
 
 An AI-powered coffee shop chatbot built with Streamlit and Google ADK (Agent Development Kit), powered by Gemini.
